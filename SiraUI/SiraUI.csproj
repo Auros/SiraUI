@@ -104,10 +104,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <SourceRoot Include="$(MSBuildThisFileDirectory)/"/>
-    </ItemGroup>
-    
-    <ItemGroup>
         <None Include="Directory.Build.props" Condition="Exists('Directory.Build.props')" />
         <None Include="Directory.Build.targets" Condition="Exists('Directory.Build.targets')" />
         <None Include="SiraUI.csproj.user" Condition="Exists('SiraUI.csproj.user')" />
