@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiraUI", "SiraUI\SiraUI.csproj", "{A252A665-394A-446F-87BE-7527DDA5F24D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A252A665-394A-446F-87BE-7527DDA5F24D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A252A665-394A-446F-87BE-7527DDA5F24D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A252A665-394A-446F-87BE-7527DDA5F24D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A252A665-394A-446F-87BE-7527DDA5F24D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D973231E-4C56-4181-8DFA-1DAD21D006FE}
+	EndGlobalSection
+EndGlobal
