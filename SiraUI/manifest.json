@@ -1,0 +1,13 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/bsmg/BSIPA-MetadataFileSchema/master/Schema.json",
+  "author": "SIRA",
+  "dependsOn": {
+    "BSIPA": "^4.0.5",
+    "SiraUtil": "^2.3.0"
+  },
+  "description": "Extra user interface component library for Beat Saber.",
+  "gameVersion": "1.13.0",
+  "id": "SiraUI",
+  "name": "SiraUI",
+  "version": "0.1.0"
+}
