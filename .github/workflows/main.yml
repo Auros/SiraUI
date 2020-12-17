@@ -1,4 +1,4 @@
-name: Build EnhancedStreamChat
+name: Build and Deploy SiraUI
 
 on:
   push:
