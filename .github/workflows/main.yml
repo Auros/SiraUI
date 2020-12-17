@@ -21,11 +21,11 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.101
-    - name: GetStrippedRefs
+    - name: Get SiraRef
       env:
         FILES_URL: ${{ secrets.SDEPS_URL }}
       run: wget --no-check-certificate "$FILES_URL" -q -O xfs.zip
-    - name: ExtractRefs
+    - name: Extract SiraRef
       run: unzip -q -n xfs.zip -d ./Refs
     - name: Build
       id: Build
@@ -41,12 +41,12 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: ${{ steps.Build.outputs.filename }}
-        path: ./EnhancedStreamChat/bin/Release/Final
+        path: ./SiraUI/bin/Release/Final
     - name: CopyPDB
-      working-directory: ./EnhancedStreamChat/bin/Release
+      working-directory: ./SiraUI/bin/Release
       run: cp ${{ steps.Build.outputs.assemblyname }}.pdb Final/Plugins/${{ steps.Build.outputs.assemblyname }}.pdb
     - name: Upload Artifact With PDB
       uses: actions/upload-artifact@v1
       with:
         name: ${{ steps.Build.outputs.filename }}_WithPDB
-        path: ./EnhancedStreamChat/bin/Release/Final
+        path: ./SiraUI/bin/Release/Final
